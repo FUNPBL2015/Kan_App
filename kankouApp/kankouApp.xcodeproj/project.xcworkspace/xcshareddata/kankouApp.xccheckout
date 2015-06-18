@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>43922BD4-C14A-409E-91ED-A61C9D304AC7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>kankouApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3551558C09E0E0F5064392F80E48A63EC17ABB7F</key>
+		<string>https://github.com/FUNPBL2015/Kan_App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>kankouApp/kankouApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3551558C09E0E0F5064392F80E48A63EC17ABB7F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FUNPBL2015/Kan_App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3551558C09E0E0F5064392F80E48A63EC17ABB7F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3551558C09E0E0F5064392F80E48A63EC17ABB7F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Kan_App</string>
+		</dict>
+	</array>
+</dict>
+</plist>
