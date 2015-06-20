@@ -22,22 +22,31 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-dU-YHv">
-                                <rect key="frame" x="137" y="275" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO2-jp-r66">
+                                <rect key="frame" x="137" y="355" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nHB-Ra-M13" kind="presentation" id="XQh-KA-fMe"/>
+                                    <segue destination="Vfb-e1-5Cl" kind="presentation" id="chv-1j-Z65"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-oZ-ehF">
-                                <rect key="frame" x="137" y="383" width="46" height="30"/>
+                                <rect key="frame" x="137" y="455" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Lzb-bj-reV" kind="presentation" id="4He-hf-Wzh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-dU-YHv">
+                                <rect key="frame" x="137" y="255" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nHB-Ra-M13" kind="presentation" id="XQh-KA-fMe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,6 +55,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="titleLabel" destination="kh9-bI-dsS" id="dsW-6n-EhE"/>
+                        <outlet property="tourcourseBtn" destination="CO2-jp-r66" id="iPy-7R-vpQ"/>
                         <outlet property="tourmapBtn" destination="GqC-dU-YHv" id="vGP-ue-dbM"/>
                         <outlet property="wetherBtn" destination="BvJ-oZ-ehF" id="c7W-Eg-8mi"/>
                     </connections>
@@ -54,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1152" y="647"/>
         </scene>
-        <!--Tourmap-->
+        <!--View Controller-->
         <scene sceneID="8H8-Dy-hto">
             <objects>
-                <viewController id="nHB-Ra-M13" customClass="tourmap" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nHB-Ra-M13" customClass="ViewController" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SAj-bL-Ocn"/>
                         <viewControllerLayoutGuide type="bottom" id="3an-8J-RJg"/>
@@ -66,9 +76,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mfq-tH-saY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSR-gD-bFa">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
@@ -88,45 +95,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrz-Fj-88I">
-                                <rect key="frame" x="159" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapGorumet:" destination="nHB-Ra-M13" eventType="touchUpInside" id="waR-Em-1hN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR0-fh-dPn">
-                                <rect key="frame" x="213" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapTour:" destination="nHB-Ra-M13" eventType="touchUpInside" id="BA3-NJ-cgI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ld-Ml-PUw">
-                                <rect key="frame" x="267" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapSouvenir:" destination="nHB-Ra-M13" eventType="touchUpInside" id="eSH-Mu-aFb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="gourmetBtn" destination="xrz-Fj-88I" id="xeC-6R-muU"/>
-                        <outlet property="souvenirBtn" destination="7ld-Ml-PUw" id="yEr-An-kD6"/>
-                        <outlet property="tourBtn" destination="NR0-fh-dPn" id="2rl-eY-mff"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVK-Op-t9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="647"/>
+            <point key="canvasLocation" x="1936" y="-87"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dDw-Yg-SF5">
@@ -140,10 +115,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-4F-hBp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soo-FN-fdY">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
@@ -170,12 +141,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVx-Ej-jfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2420" y="647"/>
+            <point key="canvasLocation" x="2414" y="-87"/>
         </scene>
-        <!--Weather-->
+        <!--View Controller-->
+        <scene sceneID="4JH-gb-yUm">
+            <objects>
+                <viewController id="Vfb-e1-5Cl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQa-Vw-IIr"/>
+                        <viewControllerLayoutGuide type="bottom" id="a2P-N0-HOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oha-7K-Jp7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kcf-fd-4g0">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="観光コース" id="EgX-Kv-ZdH">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="9Wj-aI-KIA">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WGe-un-r7W">
+                                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="戻る">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="vXZ-lx-hvc" kind="show" id="2e3-aM-F3A"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEq-qT-DYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940" y="647"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="VZ8-xO-bTH">
             <objects>
-                <viewController id="Lzb-bj-reV" customClass="weather" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lzb-bj-reV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ksb-bL-YNf"/>
                         <viewControllerLayoutGuide type="bottom" id="EUj-zr-KYJ"/>
@@ -209,11 +219,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tY-QZ-3az" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805" y="1567"/>
+            <point key="canvasLocation" x="1940" y="1385"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vJk-f4-M0C"/>
-        <segue reference="XQh-KA-fMe"/>
+        <segue reference="Xq1-NN-4bc"/>
+        <segue reference="vB7-pT-JQR"/>
     </inferredMetricsTieBreakers>
 </document>
