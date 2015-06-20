@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var titleLabel: UIView!
     //観光スポット
     @IBOutlet weak var tourmapBtn: UIButton!
-    //散歩コース
-    @IBOutlet weak var tourcourseBtn: UIButton!
-    //天気
+       //天気
     @IBOutlet weak var wetherBtn: UIButton!
     
     override func viewDidLoad() {
