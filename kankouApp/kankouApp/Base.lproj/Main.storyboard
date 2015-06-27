@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="1931" y="647"/>
         </scene>
-        <!--View Controller-->
+        <!--Web Page-->
         <scene sceneID="dDw-Yg-SF5">
             <objects>
-                <viewController id="WI1-WB-VcN" customClass="ViewController" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WI1-WB-VcN" customClass="WebPage" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cL0-NB-GXK"/>
                         <viewControllerLayoutGuide type="bottom" id="Vsc-XC-Crw"/>
@@ -167,15 +167,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="WebView" destination="EaY-Zv-mzH" id="k0m-jd-Lp1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVx-Ej-jfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2508" y="647"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather-->
         <scene sceneID="VZ8-xO-bTH">
             <objects>
-                <viewController id="Lzb-bj-reV" customClass="ViewController" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lzb-bj-reV" customClass="weather" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ksb-bL-YNf"/>
                         <viewControllerLayoutGuide type="bottom" id="EUj-zr-KYJ"/>
@@ -213,7 +216,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vB7-pT-JQR"/>
         <segue reference="vJk-f4-M0C"/>
+        <segue reference="vB7-pT-JQR"/>
     </inferredMetricsTieBreakers>
 </document>
