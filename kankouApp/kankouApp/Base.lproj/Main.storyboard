@@ -81,6 +81,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="returnBtn:" destination="nHB-Ra-M13" eventType="touchUpInside" id="IcU-em-ijC"/>
                                                     <segue destination="vXZ-lx-hvc" kind="show" id="vJk-f4-M0C"/>
                                                 </connections>
                                             </button>
