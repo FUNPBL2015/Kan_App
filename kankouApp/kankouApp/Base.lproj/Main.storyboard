@@ -129,7 +129,7 @@
         <!--Web Page-->
         <scene sceneID="dDw-Yg-SF5">
             <objects>
-                <viewController id="WI1-WB-VcN" customClass="WebPage" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebPage" id="WI1-WB-VcN" customClass="WebPage" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cL0-NB-GXK"/>
                         <viewControllerLayoutGuide type="bottom" id="Vsc-XC-Crw"/>
