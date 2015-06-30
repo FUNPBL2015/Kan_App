@@ -13,6 +13,9 @@
 		37179B2A1B3148A600EA23FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37179B291B3148A600EA23FA /* Images.xcassets */; };
 		37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37179B2B1B3148A600EA23FA /* LaunchScreen.xib */; };
 		37179B391B3148A600EA23FA /* kankouAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37179B381B3148A600EA23FA /* kankouAppTests.swift */; };
+		37A067F61B4248EE00C4D533 /* PinBuy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067F51B4248EE00C4D533 /* PinBuy.csv */; };
+		37A067F81B4248F500C4D533 /* PinLook.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067F71B4248F500C4D533 /* PinLook.csv */; };
+		37A067FA1B4248FE00C4D533 /* PinEat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067F91B4248FE00C4D533 /* PinEat.csv */; };
 		37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */; };
 		71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684511B3538A80013D5BE /* MapKit.framework */; };
 		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
@@ -41,6 +44,9 @@
 		37179B321B3148A600EA23FA /* kankouAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kankouAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37179B371B3148A600EA23FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37179B381B3148A600EA23FA /* kankouAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kankouAppTests.swift; sourceTree = "<group>"; };
+		37A067F51B4248EE00C4D533 /* PinBuy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinBuy.csv; sourceTree = "<group>"; };
+		37A067F71B4248F500C4D533 /* PinLook.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinLook.csv; sourceTree = "<group>"; };
+		37A067F91B4248FE00C4D533 /* PinEat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinEat.csv; sourceTree = "<group>"; };
 		37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPage.swift; sourceTree = "<group>"; };
 		71C684511B3538A80013D5BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -124,6 +130,9 @@
 		37179B361B3148A600EA23FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37A067F51B4248EE00C4D533 /* PinBuy.csv */,
+				37A067F71B4248F500C4D533 /* PinLook.csv */,
+				37A067F91B4248FE00C4D533 /* PinEat.csv */,
 				37179B371B3148A600EA23FA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -219,6 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A067FA1B4248FE00C4D533 /* PinEat.csv in Resources */,
+				37A067F61B4248EE00C4D533 /* PinBuy.csv in Resources */,
+				37A067F81B4248F500C4D533 /* PinLook.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
