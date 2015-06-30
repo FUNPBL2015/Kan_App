@@ -88,41 +88,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-BH-AIQ">
-                                <rect key="frame" x="32" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-2Q-B2P">
+                                <rect key="frame" x="248" y="530" width="30" height="30"/>
+                                <state key="normal" title="買う">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="tapGourmet:" destination="nHB-Ra-M13" eventType="touchUpInside" id="STJ-qm-nLm"/>
-                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-BH-AIQ">
+                                <rect key="frame" x="32" y="530" width="45" height="30"/>
+                                <state key="normal" title="食べる">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJw-Ds-TVt">
-                                <rect key="frame" x="137" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="145" y="530" width="30" height="30"/>
+                                <state key="normal" title="見る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="tapTour:" destination="nHB-Ra-M13" eventType="touchUpInside" id="UQZ-eA-MDO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-2Q-B2P">
-                                <rect key="frame" x="248" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapSouvenir:" destination="nHB-Ra-M13" eventType="touchUpInside" id="PPd-lT-CiG"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="gourmetBtn" destination="W5N-BH-AIQ" id="9Tq-Cw-NcM"/>
-                        <outlet property="souvenirBtn" destination="gmd-2Q-B2P" id="KMD-hF-PSI"/>
-                        <outlet property="tourBtn" destination="yJw-Ds-TVt" id="9qr-8V-gJo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVK-Op-t9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
