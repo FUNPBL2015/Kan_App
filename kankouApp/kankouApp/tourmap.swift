@@ -23,12 +23,18 @@ class tourmap: UIViewController {
     }
     
     //グルメをタップした時の動作
+    @IBAction func EatTapButton(sender: AnyObject) {
+    }
 
     
     //観光をタップした時の動作
+    @IBAction func LookTapButton(sender: AnyObject) {
+    }
 
     
     //お土産をタップした時の動作
+    @IBAction func BuyTapButton(sender: AnyObject) {
+    }
 
     
     /*

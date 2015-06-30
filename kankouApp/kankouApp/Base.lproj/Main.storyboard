@@ -93,18 +93,27 @@
                                 <state key="normal" title="買う">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="BuyTapButton:" destination="nHB-Ra-M13" eventType="touchUpInside" id="UjZ-3n-vC3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-BH-AIQ">
                                 <rect key="frame" x="32" y="530" width="45" height="30"/>
                                 <state key="normal" title="食べる">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="EatTapButton:" destination="nHB-Ra-M13" eventType="touchUpInside" id="I2j-GQ-dAx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJw-Ds-TVt">
                                 <rect key="frame" x="145" y="530" width="30" height="30"/>
                                 <state key="normal" title="見る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="LookTapButton:" destination="nHB-Ra-M13" eventType="touchUpInside" id="BdK-yc-Yzx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
