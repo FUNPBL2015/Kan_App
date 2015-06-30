@@ -13,6 +13,7 @@
 		37179B2A1B3148A600EA23FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37179B291B3148A600EA23FA /* Images.xcassets */; };
 		37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37179B2B1B3148A600EA23FA /* LaunchScreen.xib */; };
 		37179B391B3148A600EA23FA /* kankouAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37179B381B3148A600EA23FA /* kankouAppTests.swift */; };
+		37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */; };
 		71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684511B3538A80013D5BE /* MapKit.framework */; };
 		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
 		71C684561B353A0F0013D5BE /* tourmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684551B353A0F0013D5BE /* tourmap.swift */; };
@@ -40,6 +41,7 @@
 		37179B321B3148A600EA23FA /* kankouAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kankouAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37179B371B3148A600EA23FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37179B381B3148A600EA23FA /* kankouAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kankouAppTests.swift; sourceTree = "<group>"; };
+		37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPage.swift; sourceTree = "<group>"; };
 		71C684511B3538A80013D5BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71C684551B353A0F0013D5BE /* tourmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tourmap.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				37179B2B1B3148A600EA23FA /* LaunchScreen.xib */,
 				37179B201B3148A600EA23FA /* Supporting Files */,
 				71C684551B353A0F0013D5BE /* tourmap.swift */,
+				37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */,
 				71C684571B353A380013D5BE /* weather.swift */,
 			);
 			path = kankouApp;
@@ -228,6 +231,7 @@
 			files = (
 				71C684581B353A380013D5BE /* weather.swift in Sources */,
 				37179B251B3148A600EA23FA /* ViewController.swift in Sources */,
+				37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */,
 				37179B231B3148A600EA23FA /* AppDelegate.swift in Sources */,
 				71C684561B353A0F0013D5BE /* tourmap.swift in Sources */,
 			);

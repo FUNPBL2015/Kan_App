@@ -1,17 +1,20 @@
 //
-//  weather.swift
+//  detail.swift
 //  kankouApp
 //
-//  Created by 山川拓也 on 2015/06/20.
+//  Created by 岩見建汰 on 2015/06/27.
 //  Copyright (c) 2015年 Kenta. All rights reserved.
 //
 
 import UIKit
 
-class weather: UIViewController {
+class WebPage: UIViewController {
 
+    @IBOutlet weak var WebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
