@@ -75,6 +75,8 @@ class ViewController: UIViewController {
     
     func ClickMyButton2(sender: UIButton){
         myButton2.alpha = 0.5
+        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("weather")
+        self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

@@ -157,7 +157,7 @@
         <!--Weather-->
         <scene sceneID="VZ8-xO-bTH">
             <objects>
-                <viewController id="Lzb-bj-reV" customClass="weather" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weather" id="Lzb-bj-reV" customClass="weather" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ksb-bL-YNf"/>
                         <viewControllerLayoutGuide type="bottom" id="EUj-zr-KYJ"/>
@@ -404,6 +404,6 @@
         <image name="logo.png" width="914" height="280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vJk-f4-M0C"/>
+        <segue reference="Xq1-NN-4bc"/>
     </inferredMetricsTieBreakers>
 </document>
