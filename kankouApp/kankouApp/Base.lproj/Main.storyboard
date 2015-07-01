@@ -37,7 +37,7 @@
         <!--Tourmap-->
         <scene sceneID="8H8-Dy-hto">
             <objects>
-                <viewController id="nHB-Ra-M13" customClass="tourmap" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tourmap" id="nHB-Ra-M13" customClass="tourmap" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SAj-bL-Ocn"/>
                         <viewControllerLayoutGuide type="bottom" id="3an-8J-RJg"/>
@@ -404,6 +404,6 @@
         <image name="logo.png" width="914" height="280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xq1-NN-4bc"/>
+        <segue reference="vJk-f4-M0C"/>
     </inferredMetricsTieBreakers>
 </document>
