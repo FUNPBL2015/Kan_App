@@ -10,13 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //アプリタイトル
-    @IBOutlet var titleLabel: UIView!
-    //観光スポット
-    @IBOutlet weak var tourmapBtn: UIButton!
-       //天気
-    @IBOutlet weak var wetherBtn: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
