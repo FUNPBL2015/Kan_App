@@ -8,19 +8,31 @@
 
 import UIKit
 
-class WebPage: UIViewController {
+class WebPage: UIViewController,UIWebViewDelegate{
 
     @IBOutlet weak var WebView: UIWebView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewDidLoad(){
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        var PinURL = appDelegate.PinURL
+        WebView.delegate = self
+        var URL = NSURL(string: PinURL!)
+        var URLReq = NSURLRequest(URL: URL!)
+        
+        WebView.loadRequest(URLReq)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
     
 

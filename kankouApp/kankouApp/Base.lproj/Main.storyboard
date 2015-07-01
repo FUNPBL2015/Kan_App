@@ -67,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zca-5f-DtU">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="464"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSR-gD-bFa">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -90,39 +90,37 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-2Q-B2P">
-                                <rect key="frame" x="261" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="248" y="530" width="30" height="30"/>
+                                <state key="normal" title="買う">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapSouvenir:" destination="nHB-Ra-M13" eventType="touchUpInside" id="PPd-lT-CiG"/>
+                                    <action selector="BuyTapButton:" destination="nHB-Ra-M13" eventType="touchUpInside" id="UjZ-3n-vC3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-BH-AIQ">
-                                <rect key="frame" x="153" y="531" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="32" y="530" width="45" height="30"/>
+                                <state key="normal" title="食べる">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapGourmet:" destination="nHB-Ra-M13" eventType="touchUpInside" id="STJ-qm-nLm"/>
+                                    <action selector="EatTapButton:" destination="nHB-Ra-M13" eventType="touchUpInside" id="I2j-GQ-dAx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJw-Ds-TVt">
-                                <rect key="frame" x="207" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="145" y="530" width="30" height="30"/>
+                                <state key="normal" title="見る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapTour:" destination="nHB-Ra-M13" eventType="touchUpInside" id="UQZ-eA-MDO"/>
+                                    <action selector="LookTapButton:" destination="nHB-Ra-M13" eventType="touchUpInside" id="BdK-yc-Yzx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="gourmetBtn" destination="W5N-BH-AIQ" id="9Tq-Cw-NcM"/>
-                        <outlet property="souvenirBtn" destination="gmd-2Q-B2P" id="KMD-hF-PSI"/>
-                        <outlet property="tourBtn" destination="yJw-Ds-TVt" id="9qr-8V-gJo"/>
+                        <outlet property="myMapView" destination="zca-5f-DtU" id="8Ok-Um-t6A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVK-Op-t9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,7 +130,7 @@
         <!--Web Page-->
         <scene sceneID="dDw-Yg-SF5">
             <objects>
-                <viewController id="WI1-WB-VcN" customClass="WebPage" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebPage" id="WI1-WB-VcN" customClass="WebPage" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cL0-NB-GXK"/>
                         <viewControllerLayoutGuide type="bottom" id="Vsc-XC-Crw"/>
