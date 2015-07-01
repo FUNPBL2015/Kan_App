@@ -33,6 +33,7 @@ class tourmap: UIViewController,MKMapViewDelegate{
     var myLongitude: CLLocationDegrees = 0.0
     
     func csvsplit(filename: String){
+        DataArray.removeAll(keepCapacity: true)
         var path = NSBundle.mainBundle().pathForResource(filename, ofType: "csv")
         var data = NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil) as!String
         
