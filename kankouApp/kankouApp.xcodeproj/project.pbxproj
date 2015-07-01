@@ -21,6 +21,7 @@
 		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
 		71C684561B353A0F0013D5BE /* tourmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684551B353A0F0013D5BE /* tourmap.swift */; };
 		71C684581B353A380013D5BE /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684571B353A380013D5BE /* weather.swift */; };
+		9C5D6B741B43F58F00F65825 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71C684551B353A0F0013D5BE /* tourmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tourmap.swift; sourceTree = "<group>"; };
 		71C684571B353A380013D5BE /* weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
+		9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9C5D6B751B43F59800F65825 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 		37179B201B3148A600EA23FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C5D6B751B43F59800F65825 /* SwiftyJSON.h */,
+				9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */,
 				37179B211B3148A600EA23FA /* Info.plist */,
 				37A067FB1B424D3D00C4D533 /* PinBuy.csv */,
 				37A067FD1B424D4400C4D533 /* PinEat.csv */,
@@ -244,6 +249,7 @@
 				71C684581B353A380013D5BE /* weather.swift in Sources */,
 				37179B251B3148A600EA23FA /* ViewController.swift in Sources */,
 				37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */,
+				9C5D6B741B43F58F00F65825 /* SwiftyJSON.swift in Sources */,
 				37179B231B3148A600EA23FA /* AppDelegate.swift in Sources */,
 				71C684561B353A0F0013D5BE /* tourmap.swift in Sources */,
 			);
