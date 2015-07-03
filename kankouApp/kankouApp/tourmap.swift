@@ -9,9 +9,12 @@
 import UIKit
 import MapKit
 
-class tourmap: UIViewController,MKMapViewDelegate{
+class tourmap: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
 
     @IBOutlet weak var myMapView: MKMapView!
+    //現在地に関する変数
+    var myLocationManager: CLLocationManager!
+
     
     class Pin : MKPointAnnotation{
         var x = 0.0
@@ -105,6 +108,19 @@ class tourmap: UIViewController,MKMapViewDelegate{
         myMapView.delegate = self
         
         
+        /*現在位置*/
+        var region:MKCoordinateRegion = self.myMapView!.region
+        self.myMapView!.setRegion(region, animated: true)
+        myLocationManager = CLLocationManager()
+        //位置情報を取得した時の通知先を指定
+        myLocationManager.delegate = self
+        //位置情報を更新する距離を指定
+        myLocationManager.distanceFilter = kCLHeadingFilterNone
+        //精度を100mの精度に指定
+        myLocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        myLocationManager.startUpdatingLocation()
+        
+        
         //pin3を目的地の座標に設定
         requestLatitude = myLatitude
         requestLongitude = myLongitude
@@ -154,6 +170,10 @@ class tourmap: UIViewController,MKMapViewDelegate{
     
     //吹き出しの表示などの設定
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) ->MKAnnotationView!{
+        //現在地をピンではなく青いまるにする
+        if(annotation === myMapView.userLocation){
+            return nil
+        }
         let reuseId = "pin"
         
         var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
@@ -171,7 +191,6 @@ class tourmap: UIViewController,MKMapViewDelegate{
         }
         return pinView
     }
-    
     //選択画面設定
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
         
@@ -279,7 +298,7 @@ class tourmap: UIViewController,MKMapViewDelegate{
         let route: MKPolyline = overlay as! MKPolyline
         let routeRenderer: MKPolylineRenderer = MKPolylineRenderer(polyline: route)
         // ルートの線の太さ.
-        routeRenderer.lineWidth = 5.0
+        routeRenderer.lineWidth = 3.0
         // ルートの線の色.
         routeRenderer.strokeColor = UIColor.redColor()
         return routeRenderer

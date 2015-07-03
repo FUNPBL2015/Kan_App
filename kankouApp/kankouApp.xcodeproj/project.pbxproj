@@ -24,6 +24,7 @@
 		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
 		71C684561B353A0F0013D5BE /* tourmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684551B353A0F0013D5BE /* tourmap.swift */; };
 		71C684581B353A380013D5BE /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684571B353A380013D5BE /* weather.swift */; };
+		8F3977961B46499800B4DACF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3977951B46499800B4DACF /* CoreLocation.framework */; };
 		9C5D6B741B43F58F00F65825 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71C684551B353A0F0013D5BE /* tourmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tourmap.swift; sourceTree = "<group>"; };
 		71C684571B353A380013D5BE /* weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
+		8F3977951B46499800B4DACF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9C5D6B751B43F59800F65825 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3977961B46499800B4DACF /* CoreLocation.framework in Frameworks */,
 				71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */,
 				71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */,
 			);
@@ -86,6 +89,7 @@
 		37179B141B3148A600EA23FA = {
 			isa = PBXGroup;
 			children = (
+				8F3977951B46499800B4DACF /* CoreLocation.framework */,
 				71C684531B3538AF0013D5BE /* WebKit.framework */,
 				71C684511B3538A80013D5BE /* MapKit.framework */,
 				37179B1F1B3148A600EA23FA /* kankouApp */,
