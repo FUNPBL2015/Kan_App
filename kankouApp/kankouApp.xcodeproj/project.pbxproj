@@ -17,6 +17,9 @@
 		37A067FE1B424D4400C4D533 /* PinEat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FD1B424D4400C4D533 /* PinEat.csv */; };
 		37A068001B424D4C00C4D533 /* PinLook.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FF1B424D4C00C4D533 /* PinLook.csv */; };
 		37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */; };
+		37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CB78891B442F4D00A7098F /* ki-ko.gif */; };
+		37CB788C1B442F5600A7098F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CB788B1B442F5600A7098F /* logo.png */; };
+		37CB788E1B442F5C00A7098F /* hukidashi.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CB788D1B442F5C00A7098F /* hukidashi.png */; };
 		71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684511B3538A80013D5BE /* MapKit.framework */; };
 		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
 		71C684561B353A0F0013D5BE /* tourmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684551B353A0F0013D5BE /* tourmap.swift */; };
@@ -49,6 +52,9 @@
 		37A067FD1B424D4400C4D533 /* PinEat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinEat.csv; sourceTree = "<group>"; };
 		37A067FF1B424D4C00C4D533 /* PinLook.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinLook.csv; sourceTree = "<group>"; };
 		37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPage.swift; sourceTree = "<group>"; };
+		37CB78891B442F4D00A7098F /* ki-ko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ki-ko.gif"; sourceTree = "<group>"; };
+		37CB788B1B442F5600A7098F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		37CB788D1B442F5C00A7098F /* hukidashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidashi.png; sourceTree = "<group>"; };
 		71C684511B3538A80013D5BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71C684551B353A0F0013D5BE /* tourmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tourmap.swift; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 			children = (
 				9C5D6B751B43F59800F65825 /* SwiftyJSON.h */,
 				9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */,
+				37CB788B1B442F5600A7098F /* logo.png */,
+				37CB78891B442F4D00A7098F /* ki-ko.gif */,
+				37CB788D1B442F5C00A7098F /* hukidashi.png */,
 				37179B211B3148A600EA23FA /* Info.plist */,
 				37A067FB1B424D3D00C4D533 /* PinBuy.csv */,
 				37A067FD1B424D4400C4D533 /* PinEat.csv */,
@@ -226,9 +235,12 @@
 				37179B281B3148A600EA23FA /* Main.storyboard in Resources */,
 				37A068001B424D4C00C4D533 /* PinLook.csv in Resources */,
 				37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */,
+				37CB788E1B442F5C00A7098F /* hukidashi.png in Resources */,
 				37179B2A1B3148A600EA23FA /* Images.xcassets in Resources */,
+				37CB788C1B442F5600A7098F /* logo.png in Resources */,
 				37A067FE1B424D4400C4D533 /* PinEat.csv in Resources */,
 				37A067FC1B424D3D00C4D533 /* PinBuy.csv in Resources */,
+				37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
