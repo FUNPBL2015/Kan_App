@@ -13,6 +13,19 @@
 		37179B2A1B3148A600EA23FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37179B291B3148A600EA23FA /* Images.xcassets */; };
 		37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37179B2B1B3148A600EA23FA /* LaunchScreen.xib */; };
 		37179B391B3148A600EA23FA /* kankouAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37179B381B3148A600EA23FA /* kankouAppTests.swift */; };
+		37A067FC1B424D3D00C4D533 /* PinBuy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FB1B424D3D00C4D533 /* PinBuy.csv */; };
+		37A067FE1B424D4400C4D533 /* PinEat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FD1B424D4400C4D533 /* PinEat.csv */; };
+		37A068001B424D4C00C4D533 /* PinLook.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FF1B424D4C00C4D533 /* PinLook.csv */; };
+		37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */; };
+		37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CB78891B442F4D00A7098F /* ki-ko.gif */; };
+		37CB788C1B442F5600A7098F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CB788B1B442F5600A7098F /* logo.png */; };
+		37CB788E1B442F5C00A7098F /* hukidashi.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CB788D1B442F5C00A7098F /* hukidashi.png */; };
+		71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684511B3538A80013D5BE /* MapKit.framework */; };
+		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
+		71C684561B353A0F0013D5BE /* tourmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684551B353A0F0013D5BE /* tourmap.swift */; };
+		71C684581B353A380013D5BE /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C684571B353A380013D5BE /* weather.swift */; };
+		8F3977961B46499800B4DACF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3977951B46499800B4DACF /* CoreLocation.framework */; };
+		9C5D6B741B43F58F00F65825 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,20 @@
 		37179B321B3148A600EA23FA /* kankouAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kankouAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37179B371B3148A600EA23FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37179B381B3148A600EA23FA /* kankouAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kankouAppTests.swift; sourceTree = "<group>"; };
+		37A067FB1B424D3D00C4D533 /* PinBuy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinBuy.csv; sourceTree = "<group>"; };
+		37A067FD1B424D4400C4D533 /* PinEat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinEat.csv; sourceTree = "<group>"; };
+		37A067FF1B424D4C00C4D533 /* PinLook.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinLook.csv; sourceTree = "<group>"; };
+		37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPage.swift; sourceTree = "<group>"; };
+		37CB78891B442F4D00A7098F /* ki-ko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ki-ko.gif"; sourceTree = "<group>"; };
+		37CB788B1B442F5600A7098F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		37CB788D1B442F5C00A7098F /* hukidashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidashi.png; sourceTree = "<group>"; };
+		71C684511B3538A80013D5BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		71C684551B353A0F0013D5BE /* tourmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tourmap.swift; sourceTree = "<group>"; };
+		71C684571B353A380013D5BE /* weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
+		8F3977951B46499800B4DACF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9C5D6B751B43F59800F65825 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3977961B46499800B4DACF /* CoreLocation.framework in Frameworks */,
+				71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */,
+				71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +89,9 @@
 		37179B141B3148A600EA23FA = {
 			isa = PBXGroup;
 			children = (
+				8F3977951B46499800B4DACF /* CoreLocation.framework */,
+				71C684531B3538AF0013D5BE /* WebKit.framework */,
+				71C684511B3538A80013D5BE /* MapKit.framework */,
 				37179B1F1B3148A600EA23FA /* kankouApp */,
 				37179B351B3148A600EA23FA /* kankouAppTests */,
 				37179B1E1B3148A600EA23FA /* Products */,
@@ -83,6 +116,9 @@
 				37179B291B3148A600EA23FA /* Images.xcassets */,
 				37179B2B1B3148A600EA23FA /* LaunchScreen.xib */,
 				37179B201B3148A600EA23FA /* Supporting Files */,
+				71C684551B353A0F0013D5BE /* tourmap.swift */,
+				37C79F0B1B3E7B4E00BE5736 /* WebPage.swift */,
+				71C684571B353A380013D5BE /* weather.swift */,
 			);
 			path = kankouApp;
 			sourceTree = "<group>";
@@ -90,7 +126,15 @@
 		37179B201B3148A600EA23FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C5D6B751B43F59800F65825 /* SwiftyJSON.h */,
+				9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */,
+				37CB788B1B442F5600A7098F /* logo.png */,
+				37CB78891B442F4D00A7098F /* ki-ko.gif */,
+				37CB788D1B442F5C00A7098F /* hukidashi.png */,
 				37179B211B3148A600EA23FA /* Info.plist */,
+				37A067FB1B424D3D00C4D533 /* PinBuy.csv */,
+				37A067FD1B424D4400C4D533 /* PinEat.csv */,
+				37A067FF1B424D4C00C4D533 /* PinLook.csv */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,8 +237,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				37179B281B3148A600EA23FA /* Main.storyboard in Resources */,
+				37A068001B424D4C00C4D533 /* PinLook.csv in Resources */,
 				37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */,
+				37CB788E1B442F5C00A7098F /* hukidashi.png in Resources */,
 				37179B2A1B3148A600EA23FA /* Images.xcassets in Resources */,
+				37CB788C1B442F5600A7098F /* logo.png in Resources */,
+				37A067FE1B424D4400C4D533 /* PinEat.csv in Resources */,
+				37A067FC1B424D3D00C4D533 /* PinBuy.csv in Resources */,
+				37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C684581B353A380013D5BE /* weather.swift in Sources */,
 				37179B251B3148A600EA23FA /* ViewController.swift in Sources */,
+				37C79F0C1B3E7B4E00BE5736 /* WebPage.swift in Sources */,
+				9C5D6B741B43F58F00F65825 /* SwiftyJSON.swift in Sources */,
 				37179B231B3148A600EA23FA /* AppDelegate.swift in Sources */,
+				71C684561B353A0F0013D5BE /* tourmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +463,7 @@
 				37179B3E1B3148A600EA23FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37179B3F1B3148A600EA23FA /* Build configuration list for PBXNativeTarget "kankouAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +472,7 @@
 				37179B411B3148A600EA23FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
