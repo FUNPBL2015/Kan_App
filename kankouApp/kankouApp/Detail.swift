@@ -24,11 +24,11 @@ class Detail: UIViewController, UITableViewDataSource,UITableViewDelegate{
         DetailTable.delegate = self
         DetailTable.dataSource = self
         
-        texts.append("電話番号")
-        texts.append("営業時間")
-        texts.append("定休日")
-        texts.append("駐車場")
-        texts.append("開発者の独り言")
+        texts.append("電話番号：123-456-7899")
+        texts.append("営業時間：10:00 〜 19:00")
+        texts.append("定休日：月曜日")
+        texts.append("駐車場：有(5台)")
+        texts.append("開発者の独り言：ラーメンが美味い")
 //        //Map関連
 //        self.StoreMap?.delegate = self
 //        
