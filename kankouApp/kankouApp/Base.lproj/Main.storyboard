@@ -83,6 +83,25 @@
             </objects>
             <point key="canvasLocation" x="1935" y="652"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="dPB-Nn-Mfb">
+            <objects>
+                <viewController id="ZvB-Rd-qYZ" customClass="Map" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jnc-RO-oXD"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ft-8O-2Xo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tbc-gO-PRL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yq5-2X-v13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328" y="652"/>
+        </scene>
         <!--Tourmap-->
         <scene sceneID="8H8-Dy-hto">
             <objects>
