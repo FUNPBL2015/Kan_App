@@ -64,6 +64,25 @@
             </objects>
             <point key="canvasLocation" x="1552" y="652"/>
         </scene>
+        <!--Detail-->
+        <scene sceneID="eKs-4c-OQS">
+            <objects>
+                <viewController id="osa-hV-k1R" customClass="Detail" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xzJ-S2-deh"/>
+                        <viewControllerLayoutGuide type="bottom" id="nqI-GT-PqE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AsB-n0-UBM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1W-tC-Wxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="652"/>
+        </scene>
         <!--Tourmap-->
         <scene sceneID="8H8-Dy-hto">
             <objects>
