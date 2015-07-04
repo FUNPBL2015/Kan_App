@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     */
     func ClickMyButton1(sender: UIButton){
         myButton1.alpha = 0.5
-        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("tourmap")
+        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("category")
         self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
     }
     

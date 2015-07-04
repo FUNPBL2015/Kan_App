@@ -14,6 +14,7 @@
 		37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37179B2B1B3148A600EA23FA /* LaunchScreen.xib */; };
 		37179B391B3148A600EA23FA /* kankouAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37179B381B3148A600EA23FA /* kankouAppTests.swift */; };
 		3763BEBB1B47B58100DB0C50 /* PhotoStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763BEBA1B47B58100DB0C50 /* PhotoStory.swift */; };
+		3763BEBD1B47B6A000DB0C50 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763BEBC1B47B6A000DB0C50 /* Category.swift */; };
 		37A067FC1B424D3D00C4D533 /* PinBuy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FB1B424D3D00C4D533 /* PinBuy.csv */; };
 		37A067FE1B424D4400C4D533 /* PinEat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FD1B424D4400C4D533 /* PinEat.csv */; };
 		37A068001B424D4C00C4D533 /* PinLook.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37A067FF1B424D4C00C4D533 /* PinLook.csv */; };
@@ -51,6 +52,7 @@
 		37179B371B3148A600EA23FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37179B381B3148A600EA23FA /* kankouAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kankouAppTests.swift; sourceTree = "<group>"; };
 		3763BEBA1B47B58100DB0C50 /* PhotoStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStory.swift; sourceTree = "<group>"; };
+		3763BEBC1B47B6A000DB0C50 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		37A067FB1B424D3D00C4D533 /* PinBuy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinBuy.csv; sourceTree = "<group>"; };
 		37A067FD1B424D4400C4D533 /* PinEat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinEat.csv; sourceTree = "<group>"; };
 		37A067FF1B424D4C00C4D533 /* PinLook.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinLook.csv; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				37179B221B3148A600EA23FA /* AppDelegate.swift */,
 				37179B241B3148A600EA23FA /* ViewController.swift */,
 				37179B261B3148A600EA23FA /* Main.storyboard */,
+				3763BEBC1B47B6A000DB0C50 /* Category.swift */,
 				3763BEBA1B47B58100DB0C50 /* PhotoStory.swift */,
 				37179B291B3148A600EA23FA /* Images.xcassets */,
 				37179B2B1B3148A600EA23FA /* LaunchScreen.xib */,
@@ -272,6 +275,7 @@
 				37179B231B3148A600EA23FA /* AppDelegate.swift in Sources */,
 				71C684561B353A0F0013D5BE /* tourmap_old.swift in Sources */,
 				3763BEBB1B47B58100DB0C50 /* PhotoStory.swift in Sources */,
+				3763BEBD1B47B6A000DB0C50 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

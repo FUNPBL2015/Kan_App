@@ -34,6 +34,36 @@
             </objects>
             <point key="canvasLocation" x="1152" y="647"/>
         </scene>
+        <!--Category-->
+        <scene sceneID="Fon-Gj-hDe">
+            <objects>
+                <viewController storyboardIdentifier="category" id="HF1-0d-e9A" customClass="Category" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fd8-au-uU9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wrc-dg-blu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QUQ-e2-BAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTT-KK-VQ1">
+                                <rect key="frame" x="21" y="34" width="30" height="30"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="FcQ-6O-7Wd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcK-h8-KHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552" y="652"/>
+        </scene>
         <!--Tourmap-->
         <scene sceneID="8H8-Dy-hto">
             <objects>
@@ -188,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lm4-Vp-3yO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="1255"/>
+            <point key="canvasLocation" x="1543" y="1352"/>
         </scene>
         <!--Weather-->
         <scene sceneID="VZ8-xO-bTH">
@@ -441,6 +471,6 @@
         <image name="logo.png" width="914" height="280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PrC-Fp-5nJ"/>
+        <segue reference="FcQ-6O-7Wd"/>
     </inferredMetricsTieBreakers>
 </document>
