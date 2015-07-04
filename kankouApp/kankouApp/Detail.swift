@@ -29,16 +29,7 @@ class Detail: UIViewController, UITableViewDataSource,UITableViewDelegate{
         texts.append("定休日：月曜日")
         texts.append("駐車場：有(5台)")
         texts.append("開発者の独り言：ラーメンが美味い")
-//        //Map関連
-//        self.StoreMap?.delegate = self
-//        
-//        var region: MKCoordinateRegion = self.StoreMap!.region
-//        var location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(41.677589, 140.433941)
-//        region.center = location
-//        region.span.latitudeDelta = 0.005
-//        region.span.longitudeDelta = 0.005
-//        
-//        self.StoreMap!.setRegion(region, animated: true)
+
     }
 
     override func didReceiveMemoryWarning() {
