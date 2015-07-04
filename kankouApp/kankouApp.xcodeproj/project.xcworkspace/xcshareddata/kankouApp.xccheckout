@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>43922BD4-C14A-409E-91ED-A61C9D304AC7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>kankouApp</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3551558C09E0E0F5064392F80E48A63EC17ABB7F</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/FUNPBL2015/kan_practice1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>kankouApp/kankouApp.xcodeproj</string>
+	<string>kankouApp/kankouApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3551558C09E0E0F5064392F80E48A63EC17ABB7F</key>

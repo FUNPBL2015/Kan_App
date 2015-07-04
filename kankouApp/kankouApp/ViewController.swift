@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         myButton2.layer.masksToBounds = true
         
         // タイトルを設定する(通常時).
-        myButton1.setTitle("観光スポット情報", forState: UIControlState.Normal)
+        myButton1.setTitle("観光する", forState: UIControlState.Normal)
         myButton1.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        myButton2.setTitle("木古内のお天気", forState: UIControlState.Normal)
+        myButton2.setTitle("振り返る", forState: UIControlState.Normal)
         myButton2.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         
         // コーナーの半径を設定する.
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     
     func ClickMyButton2(sender: UIButton){
         myButton2.alpha = 0.5
-        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("weather")
+        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("photostory")
         self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
     }
     
