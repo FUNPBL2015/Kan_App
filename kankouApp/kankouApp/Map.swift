@@ -39,7 +39,10 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         
         //目的地の緯度、経度を設定
         requestLatitude = 41.676253
-        requestLongitude = 140.435481
+        requestLongitude = 140.435481       //あおき
+        
+//        requestLatitude = 41.841835
+//        requestLongitude = 140.766998     //未来大学
         
         // Delegateを設定.
         myMapView.delegate = self
@@ -57,9 +60,16 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         myLocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         myLocationManager.startUpdatingLocation()
         
+        var StorePin: MKPointAnnotation = MKPointAnnotation()
+        StorePin.coordinate = CLLocationCoordinate2DMake(requestLatitude, requestLongitude)
+        StorePin.title = "目的地のタイトル"
+        StorePin.subtitle = "目的地のサブタイトル"
+        myMapView.addAnnotation(StorePin)
+        
         var overlays = myMapView.overlays
         myMapView.removeOverlays(overlays)
         caliculate()
+        showUserAndDestinationOnMap()
         
     }
     
@@ -92,26 +102,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         return pinView
     }
     
-    //選択画面設定
-//    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
-//        
-//        let alertController = UIAlertController(title: "", message: "選択してください", preferredStyle: .ActionSheet)
-//
-//        //ルート表示の処理
-//        let secondAction = UIAlertAction(title: "ルート案内", style: .Default) {
-//            action in
-//            //ルートを消す
-//            var overlays = mapView.overlays
-//            mapView.removeOverlays(overlays)
-//            
-//            //設定した行き先で計算
-//            self.caliculate()
-//        }
-//
-//        alertController.addAction(secondAction)
-//        presentViewController(alertController, animated: true, completion: nil)
-//    }
-    
     // ルートの表示設定.
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
         let route: MKPolyline = overlay as! MKPolyline
@@ -121,6 +111,31 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         // ルートの線の色.
         routeRenderer.strokeColor = UIColor.redColor()
         return routeRenderer
+    }
+    
+    // 地図の表示範囲を計算
+    func showUserAndDestinationOnMap()
+    {
+        // 現在地と目的地を含む矩形を計算
+        var maxLat:Double = fmax(myLatitude,  requestLatitude)
+        var maxLon:Double = fmax(myLongitude, requestLongitude)
+        var minLat:Double = fmin(myLatitude,  requestLatitude)
+        var minLon:Double = fmin(myLongitude, requestLongitude)
+        
+        // 地図表示するときの緯度、経度の幅を計算
+        var mapMargin:Double = 1.5;  // 経路が入る幅(1.0)＋余白(0.5)
+        var leastCoordSpan:Double = 0.005;    // 拡大表示したときの最大値
+        var span_x:Double = fmax(leastCoordSpan, fabs(maxLat - minLat) * mapMargin);
+        var span_y:Double = fmax(leastCoordSpan, fabs(maxLon - minLon) * mapMargin);
+        
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(span_x, span_y);
+        
+        // 現在地を目的地の中心を計算
+        var center:CLLocationCoordinate2D = CLLocationCoordinate2DMake((maxLat + minLat) / 2, (maxLon + minLon) / 2);
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(center, span);
+        
+        myMapView.setRegion(myMapView.regionThatFits(region), animated:true);
+        
     }
     
     //ルート計算関数
