@@ -203,12 +203,8 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
             //設定した行き先で計算
             self.caliculate()
         }
-        //キャンセル時の処理
-        let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel) {
-            action in println("Pushed CANCEL")
-        }
+
         alertController.addAction(secondAction)
-        alertController.addAction(cancelAction)
         presentViewController(alertController, animated: true, completion: nil)
     }
     
