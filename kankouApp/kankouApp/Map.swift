@@ -19,17 +19,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     var myLocationManager: CLLocationManager!
     
     
-    class Pin : MKPointAnnotation{
-        var x = 0.0
-        var y = 0.0
-        var WebURL: String!
-    }
-    
-    var PinArrayBuy: Array<Pin> = []               //ピンのオブジェクト格納
-    var PinArrayLook: Array<Pin> = []
-    var PinArrayEat: Array<Pin> = []
-    var DataArray = [[String]]()
-    
     //計算時の行き先座標
     var requestLatitude = 0.0
     var requestLongitude = 0.0
@@ -38,61 +27,11 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     var myLatitude: CLLocationDegrees = 0.0
     var myLongitude: CLLocationDegrees = 0.0
     
-    func csvsplit(filename: String){
-        DataArray.removeAll(keepCapacity: true)
-        var path = NSBundle.mainBundle().pathForResource(filename, ofType: "csv")
-        var data = NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil) as!String
-        
-        let lines = split(data, isSeparator: { $0 == "\n"})
-        for line in lines{
-            DataArray.append(split(line, isSeparator: { $0 == ","}))
-        }
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         StoreLabel.text = "CEK倶楽部周辺の地図"
-        csvsplit("PinBuy")
-        /*「買う」に関するピン情報を格納*/
-        for(var i = 0; i < DataArray.count; i++){
-            
-            PinArrayBuy.append(Pin())
-            PinArrayBuy[i].x = atof(DataArray[i][0])
-            PinArrayBuy[i].y = atof(DataArray[i][1])
-            PinArrayBuy[i].coordinate = CLLocationCoordinate2DMake(PinArrayBuy[i].x, PinArrayBuy[i].y)
-            PinArrayBuy[i].title = DataArray[i][2]
-            PinArrayBuy[i].subtitle = DataArray[i][3]
-            PinArrayBuy[i].WebURL = DataArray[i][4]
-        }
-        
-        csvsplit("PinLook")
-        /*「見る・遊ぶ」に関するピン情報を格納*/
-        for(var i = 0; i < DataArray.count; i++){
-            
-            PinArrayLook.append(Pin())
-            PinArrayLook[i].x = atof(DataArray[i][0])
-            PinArrayLook[i].y = atof(DataArray[i][1])
-            PinArrayLook[i].coordinate = CLLocationCoordinate2DMake(PinArrayLook[i].x, PinArrayLook[i].y)
-            PinArrayLook[i].title = DataArray[i][2]
-            PinArrayLook[i].subtitle = DataArray[i][3]
-            PinArrayLook[i].WebURL = DataArray[i][4]
-        }
-        
-        
-        csvsplit("PinEat")
-        /*「買う」に関するピン情報を格納*/
-        for(var i = 0; i < DataArray.count; i++){
-            
-            PinArrayEat.append(Pin())
-            PinArrayEat[i].x = atof(DataArray[i][0])
-            PinArrayEat[i].y = atof(DataArray[i][1])
-            PinArrayEat[i].coordinate = CLLocationCoordinate2DMake(PinArrayEat[i].x, PinArrayEat[i].y)
-            PinArrayEat[i].title = DataArray[i][2]
-            PinArrayEat[i].subtitle = DataArray[i][3]
-            PinArrayEat[i].WebURL = DataArray[i][4]
-        }
         
         // 出発点の緯度、経度を設定.
         myLatitude = 41.677589
@@ -168,37 +107,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
             //ルートを消す
             var overlays = mapView.overlays
             mapView.removeOverlays(overlays)
-            //行き先を設定する
-            for(var i=0;i<self.PinArrayBuy.count;i++){
-                allID = self.PinArrayBuy[i].hash
-                nowID = view.annotation.hash
-                if(allID==nowID){
-                    self.requestLatitude = self.PinArrayBuy[i].x
-                    self.requestLongitude = self.PinArrayBuy[i].y
-                    break
-                }
-            }
-            
-            for(var i=0;i<self.PinArrayLook.count;i++){
-                allID = self.PinArrayLook[i].hash
-                nowID = view.annotation.hash
-                if(allID==nowID){
-                    self.requestLatitude = self.PinArrayLook[i].x
-                    self.requestLongitude = self.PinArrayLook[i].y
-                    break
-                }
-            }
-            
-            
-            for(var i=0;i<self.PinArrayEat.count;i++){
-                allID = self.PinArrayEat[i].hash
-                nowID = view.annotation.hash
-                if(allID==nowID){
-                    self.requestLatitude = self.PinArrayEat[i].x
-                    self.requestLongitude = self.PinArrayEat[i].y
-                    break
-                }
-            }
             
             //設定した行き先で計算
             self.caliculate()
@@ -269,6 +177,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         }
         
     }
+    
     //位置更新がされた時のメソッド
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations:[AnyObject]!) {
         //ユーザの現在地を表示する
