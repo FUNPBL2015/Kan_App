@@ -10,17 +10,17 @@ import UIKit
 
 class Detail: UIViewController, UITableViewDataSource,UITableViewDelegate{
 
-    @IBOutlet weak var StoreName: UILabel!
+    @IBOutlet weak var StoreLabel: UILabel!
     @IBOutlet weak var DetailTable: UITableView!
+    @IBOutlet weak var DetailNavigationBar: UINavigationBar!
     
     var texts = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        StoreName.text = "CEK倶楽部"
-        StoreName.font = UIFont.systemFontOfSize(25)
-        StoreName.textAlignment = NSTextAlignment.Center
         
+        StoreLabel.text = "CEK倶楽部"
+        StoreLabel.font = UIFont.systemFontOfSize(20)
         DetailTable.delegate = self
         DetailTable.dataSource = self
         
