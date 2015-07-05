@@ -19,7 +19,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     var myLocationManager: CLLocationManager!
     
     
-    //計算時の行き先座標
+    //目的地の座標
     var requestLatitude = 0.0
     var requestLongitude = 0.0
     
@@ -33,9 +33,13 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         
         StoreLabel.text = "CEK倶楽部周辺の地図"
         
-        // 出発点の緯度、経度を設定.
+        // 出発点の緯度、経度を設定. 今は仮に木古内駅にしている
         myLatitude = 41.677589
         myLongitude = 140.433941
+        
+        //目的地の緯度、経度を設定
+        requestLatitude = 41.676253
+        requestLongitude = 140.435481
         
         // Delegateを設定.
         myMapView.delegate = self
@@ -53,11 +57,8 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         myLocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         myLocationManager.startUpdatingLocation()
         
-        
-        //pin3を目的地の座標に設定
-        requestLatitude = myLatitude
-        requestLongitude = myLongitude
-        
+        var overlays = myMapView.overlays
+        myMapView.removeOverlays(overlays)
         caliculate()
         
     }
@@ -92,29 +93,24 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     }
     
     //選択画面設定
-    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
-        
-        var allID = 0
-        var nowID = 0
-        
-        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        
-        let alertController = UIAlertController(title: "", message: "選択してください", preferredStyle: .ActionSheet)
-
-        //ルート表示の処理
-        let secondAction = UIAlertAction(title: "ルート案内", style: .Default) {
-            action in
-            //ルートを消す
-            var overlays = mapView.overlays
-            mapView.removeOverlays(overlays)
-            
-            //設定した行き先で計算
-            self.caliculate()
-        }
-
-        alertController.addAction(secondAction)
-        presentViewController(alertController, animated: true, completion: nil)
-    }
+//    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+//        
+//        let alertController = UIAlertController(title: "", message: "選択してください", preferredStyle: .ActionSheet)
+//
+//        //ルート表示の処理
+//        let secondAction = UIAlertAction(title: "ルート案内", style: .Default) {
+//            action in
+//            //ルートを消す
+//            var overlays = mapView.overlays
+//            mapView.removeOverlays(overlays)
+//            
+//            //設定した行き先で計算
+//            self.caliculate()
+//        }
+//
+//        alertController.addAction(secondAction)
+//        presentViewController(alertController, animated: true, completion: nil)
+//    }
     
     // ルートの表示設定.
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
