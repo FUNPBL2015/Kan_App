@@ -34,7 +34,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     var requestLatitude = 0.0
     var requestLongitude = 0.0
     
-    //計算時の行き先の座標
+    //出発点の座標
     var myLatitude: CLLocationDegrees = 0.0
     var myLongitude: CLLocationDegrees = 0.0
     
@@ -126,32 +126,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    //グルメをタップした時の動作
-    @IBAction func EatTapButton(sender: AnyObject) {
-        removeallannotations()
-        myMapView.addAnnotations(PinArrayEat)
-    }
-    
-    
-    //観光をタップした時の動作
-    @IBAction func LookTapButton(sender: AnyObject) {
-        removeallannotations()
-        myMapView.addAnnotations(PinArrayLook)
-    }
-    
-    
-    //お土産をタップした時の動作
-    @IBAction func BuyTapButton(sender: AnyObject) {
-        removeallannotations()
-        myMapView.addAnnotations(PinArrayBuy)
-    }
-    
-    func removeallannotations(){
-        myMapView.removeAnnotations(PinArrayBuy)
-        myMapView.removeAnnotations(PinArrayEat)
-        myMapView.removeAnnotations(PinArrayLook)
     }
     
     //吹き出しの表示などの設定
