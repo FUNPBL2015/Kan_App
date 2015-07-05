@@ -151,6 +151,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         }
         return pinView
     }
+    
     //選択画面設定
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
         
@@ -160,48 +161,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         
         let alertController = UIAlertController(title: "", message: "選択してください", preferredStyle: .ActionSheet)
-        //詳細情報表示の処理
-        let firstAction = UIAlertAction(title: "詳細情報表示", style: .Default) {
-            action in
-            
-            //「買う」に関する詳細情報
-            for(var i=0;i<self.PinArrayBuy.count;i++){
-                allID = self.PinArrayBuy[i].hash
-                nowID = view.annotation.hash
-                if(allID==nowID){
-                    appDelegate.PinURL = self.PinArrayBuy[i].WebURL //appDelegateの変数を操作
-                    var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("WebPage")
-                    self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
-                    break
-                }
-            }
-            
-            //「見る・遊ぶ」に関する詳細情報
-            for(var i=0;i<self.PinArrayLook.count;i++){
-                allID = self.PinArrayLook[i].hash
-                nowID = view.annotation.hash
-                if(allID==nowID){
-                    appDelegate.PinURL = self.PinArrayLook[i].WebURL //appDelegateの変数を操作
-                    var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("WebPage")
-                    self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
-                    break
-                }
-            }
-            
-            //「食べる」に関する詳細情報
-            for(var i=0;i<self.PinArrayEat.count;i++){
-                allID = self.PinArrayEat[i].hash
-                nowID = view.annotation.hash
-                if(allID==nowID){
-                    appDelegate.PinURL = self.PinArrayEat[i].WebURL //appDelegateの変数を操作
-                    var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("WebPage")
-                    self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
-                    break
-                }
-            }
-            
-            
-        }
+
         //ルート表示の処理
         let secondAction = UIAlertAction(title: "ルート案内", style: .Default) {
             action in
@@ -247,7 +207,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel) {
             action in println("Pushed CANCEL")
         }
-        alertController.addAction(firstAction)
         alertController.addAction(secondAction)
         alertController.addAction(cancelAction)
         presentViewController(alertController, animated: true, completion: nil)
