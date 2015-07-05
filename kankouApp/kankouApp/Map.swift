@@ -148,11 +148,8 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         let center: CLLocationCoordinate2D = CLLocationCoordinate2DMake((myLatitude + requestLatitude)/2, (myLongitude + requestLongitude)/2)
         // mapViewに中心をセットする.
         myMapView.setCenterCoordinate(center, animated: true)
-        // 縮尺を指定.
-        let mySpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        let myRegion: MKCoordinateRegion = MKCoordinateRegion(center: center, span: mySpan)
-        // regionをmapViewにセット.
-        myMapView.region = myRegion
+
+        
         // viewにmapViewを追加.
         self.view.addSubview(myMapView)
         // PlaceMarkを生成して出発点、目的地の座標をセット.
