@@ -124,7 +124,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         
         // 地図表示するときの緯度、経度の幅を計算
         var mapMargin:Double = 1.5;  // 経路が入る幅(1.0)＋余白(0.5)
-        var leastCoordSpan:Double = 0.005;    // 拡大表示したときの最大値
+        var leastCoordSpan:Double = 0.0038;    // 拡大表示したときの最大値
         var span_x:Double = fmax(leastCoordSpan, fabs(maxLat - minLat) * mapMargin);
         var span_y:Double = fmax(leastCoordSpan, fabs(maxLon - minLon) * mapMargin);
         
@@ -142,13 +142,7 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     func caliculate() ->Void{
         // 目的地の座標を指定.
         var requestCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(requestLatitude, requestLongitude)
-        
         let fromCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(myLatitude, myLongitude)
-        // 地図の中心を出発点と目的地の中間に設定する.
-        let center: CLLocationCoordinate2D = CLLocationCoordinate2DMake((myLatitude + requestLatitude)/2, (myLongitude + requestLongitude)/2)
-        // mapViewに中心をセットする.
-        myMapView.setCenterCoordinate(center, animated: true)
-
         
         // viewにmapViewを追加.
         self.view.addSubview(myMapView)
