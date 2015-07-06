@@ -12,7 +12,6 @@ import MapKit
 class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     
 
-    @IBOutlet weak var StoreLabel: UILabel!
     @IBOutlet weak var myMapView: MKMapView!
     
     //現在地に関する変数
@@ -30,8 +29,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        StoreLabel.text = "CEK倶楽部周辺の地図"
         
         // 出発点の緯度、経度を設定. 今は仮に木古内駅にしている
         myLatitude = 41.677589
