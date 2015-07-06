@@ -70,8 +70,8 @@ class ViewController: UIViewController {
         myButton2.layer.cornerRadius = 20.0
         
         // ボタンの位置を指定する.
-        myButton1.layer.position = CGPoint(x: self.view.frame.width/2-14, y:210)
-        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+14, y:300)
+        myButton1.layer.position = CGPoint(x: self.view.frame.width/2-14, y:205)
+        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+14, y:295)
         
         // タグを設定する.
         myButton1.tag = 1
