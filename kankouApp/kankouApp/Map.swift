@@ -12,6 +12,10 @@ import MapKit
 class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     
 
+    @IBOutlet weak var Distance: UILabel!
+    @IBOutlet weak var WalkTime: UILabel!
+    @IBOutlet weak var DriveTime: UILabel!
+    
     @IBOutlet weak var myMapView: MKMapView!
     
     //現在地に関する変数
@@ -30,6 +34,10 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Distance.text = ""
+        WalkTime.text = ""
+        DriveTime.text = ""
+        
         // 出発点の緯度、経度を設定. 今は仮に木古内駅にしている
         myLatitude = 41.677589
         myLongitude = 140.433941
@@ -38,8 +46,8 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         requestLatitude = 41.676253
         requestLongitude = 140.435481       //あおき
         
-//        requestLatitude = 41.841835
-//        requestLongitude = 140.766998     //未来大学
+       // requestLatitude = 41.841835
+       // requestLongitude = 140.766998     //未来大学
         
         // Delegateを設定.
         myMapView.delegate = self
@@ -67,7 +75,6 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         myMapView.removeOverlays(overlays)
         caliculate()
         showUserAndDestinationOnMap()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -150,31 +157,62 @@ class Map: UIViewController,MKMapViewDelegate ,CLLocationManagerDelegate{
         let fromItem: MKMapItem = MKMapItem(placemark: fromPlace)
         let toItem: MKMapItem = MKMapItem(placemark: toPlace)
         // MKDirectionsRequestを生成.
-        let myRequest: MKDirectionsRequest = MKDirectionsRequest()
+        let myRequest_walk: MKDirectionsRequest = MKDirectionsRequest()
+        let myRequest_drive: MKDirectionsRequest = MKDirectionsRequest()
+
         // 出発地のItemをセット.
-        myRequest.setSource(fromItem)
+        myRequest_walk.setSource(fromItem)
+        myRequest_drive.setSource(fromItem)
+
         // 目的地のItemをセット.
-        myRequest.setDestination(toItem)
+        myRequest_walk.setDestination(toItem)
+        myRequest_drive.setDestination(toItem)
+        
         // 複数経路の検索を有効.
-        myRequest.requestsAlternateRoutes = true
-        // 移動手段を歩きに設定.
-        myRequest.transportType = MKDirectionsTransportType.Walking
+        myRequest_walk.requestsAlternateRoutes = true
+        myRequest_drive.requestsAlternateRoutes = true
+
+        // 移動手段を設定.
+        myRequest_walk.transportType = MKDirectionsTransportType.Walking
+        myRequest_drive.transportType = MKDirectionsTransportType.Automobile
+
         // MKDirectionsを生成してRequestをセット.
-        let myDirections: MKDirections = MKDirections(request: myRequest)
+        let myDirections_walk: MKDirections = MKDirections(request: myRequest_walk)
+        let myDirections_drive: MKDirections = MKDirections(request: myRequest_drive)
+
         // 経路探索.
-        myDirections.calculateDirectionsWithCompletionHandler { (response: MKDirectionsResponse!, error: NSError!) -> Void in
+        myDirections_walk.calculateDirectionsWithCompletionHandler { (response: MKDirectionsResponse!, error: NSError!) -> Void in
             // NSErrorを受け取ったか、ルートがない場合.
             if error != nil || response.routes.isEmpty {
                 return
             }
             let route: MKRoute = response.routes[0] as! MKRoute
             
-            // println("目的地まで \(route.distance)km")
-            // println("所要時間 \(Int(route.expectedTravelTime/60))分")
+            if route.distance < 1000{
+                self.Distance.text = "目的地までの距離: \(route.distance)m"
+            }else{
+                self.Distance.text = "目的地までの距離: \(route.distance/1000)km"
+
+            }
+            
+            self.WalkTime.text = "\(Int(route.expectedTravelTime/60))分"
+            
             // mapViewにルートを描画.
             self.myMapView.addOverlay(route.polyline)
         }
         
+        myDirections_drive.calculateDirectionsWithCompletionHandler { (response: MKDirectionsResponse!, error: NSError!) -> Void in
+            // NSErrorを受け取ったか、ルートがない場合.
+            if error != nil || response.routes.isEmpty {
+                return
+            }
+            let route: MKRoute = response.routes[0] as! MKRoute
+            
+            self.DriveTime.text = "\(Int(route.expectedTravelTime/60))分"
+            
+            
+        }
+
     }
     
     //位置更新がされた時のメソッド
