@@ -17,13 +17,13 @@ class eating: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let myImage1: UIImage = UIImage(named: "aburidon-aoki001.jpg")!
+       // let myImage1: UIImage = UIImage(named: "aburidon-aoki001.jpg")!
         // 画面に画像を設定する
-        pic1.image = myImage1
+     //   pic1.image = myImage1
         
-        let myImage2: UIImage = UIImage(named: "tokusan-gurume005.jpg")!
+      //  let myImage2: UIImage = UIImage(named: "tokusan-gurume005.jpg")!
         // 画面に画像を設定する
-        pic2.image = myImage2
+     //   pic2.image = myImage2
     }
 
     override func didReceiveMemoryWarning() {
