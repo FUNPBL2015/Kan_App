@@ -157,7 +157,7 @@
         <!--Category-->
         <scene sceneID="seB-zR-vW8">
             <objects>
-                <tabBarController id="5gb-cd-rdy" customClass="category" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="category" id="5gb-cd-rdy" customClass="category" customModule="kankouApp" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UmA-Gy-Fi1">
