@@ -13,10 +13,33 @@ class ViewController: UIViewController {
     var myButton1: UIButton!
     var myButton2: UIButton!
     
+    @IBOutlet weak var nowimage: UIImageView!
+    @IBOutlet weak var nowtemp: UILabel!
+    @IBOutlet weak var maxtemp: UILabel!
+    @IBOutlet weak var mintemp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController?.hidesBarsOnTap = true
+        
+        var maxTemp: String
+        var minTemp: String
+        var nowTemp: String
+        var nowWeatherImage: UIImage
+        
+        var request = NSURLRequest(URL: NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=Kikonai,jp&APPID=929cccb5476e5965410a401bf0efe12a")!)
+        var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil, error: nil)
+        var json = JSON(data:data!)
+        nowTemp = NSString(format: "%.1f", json["main"]["temp"].doubleValue - 273.15) as! String
+        maxTemp = NSString(format: "%.1f", json["main"]["temp_max"].doubleValue - 273.15) as! String
+        minTemp = NSString(format: "%.1f", json["main"]["temp_min"].doubleValue - 273.15) as! String
+        nowWeatherImage = UIImage(data: NSData(contentsOfURL: NSURL(string: "http://openweathermap.org/img/w/"+json["weather"][0]["icon"].string!+".png")!, options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)!)!
+
+        nowtemp.text = nowTemp
+        maxtemp.text = maxTemp
+        mintemp.text = minTemp
+        nowimage.image = nowWeatherImage
         
         // Buttonを生成する.
         myButton1 = UIButton()
@@ -47,8 +70,8 @@ class ViewController: UIViewController {
         myButton2.layer.cornerRadius = 20.0
         
         // ボタンの位置を指定する.
-        myButton1.layer.position = CGPoint(x: self.view.frame.width/2-14, y:210)
-        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+14, y:300)
+        myButton1.layer.position = CGPoint(x: self.view.frame.width/2-14, y:205)
+        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+14, y:295)
         
         // タグを設定する.
         myButton1.tag = 1
