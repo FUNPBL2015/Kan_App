@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  buying.swift
 //  kankouApp
 //
 //  Created by 池田俊輝 on 2015/07/07.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class buying: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
