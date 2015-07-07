@@ -1,14 +1,14 @@
 //
-//  Category.swift
+//  category.swift
 //  kankouApp
 //
-//  Created by 岩見建汰 on 2015/07/04.
+//  Created by 池田俊輝 on 2015/07/07.
 //  Copyright (c) 2015年 Kenta. All rights reserved.
 //
 
 import UIKit
 
-class Category: UIViewController{
+class category: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  buying.swift
 //  kankouApp
 //
 //  Created by 池田俊輝 on 2015/07/07.
@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class buying: UIViewController {
 
+    
+    @IBOutlet weak var pic1: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let myImage1: UIImage = UIImage(named: "tokusan-yama001.jpg")!
+        // 画面に画像を設定する
+        pic1.image = myImage1
     }
 
     override func didReceiveMemoryWarning() {
