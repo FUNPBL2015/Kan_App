@@ -113,9 +113,6 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4o-aj-Raz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KpP-HC-Eal">
-                                        <rect key="frame" x="8" y="85" width="143" height="104"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="みそぎの舞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQa-5d-Ifb">
                                         <rect key="frame" x="37" y="197" width="85" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -125,13 +122,22 @@
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-t5-Ciz">
                                         <rect key="frame" x="0.0" y="21" width="320" height="44"/>
                                         <items>
-                                            <barButtonItem title="Top" id="uve-hU-9gA">
+                                            <barButtonItem title="&lt; Top" id="uve-hU-9gA">
                                                 <connections>
                                                     <segue destination="vXZ-lx-hvc" kind="showDetail" id="TCL-cf-3aY"/>
                                                 </connections>
                                             </barButtonItem>
                                         </items>
                                     </toolbar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-MG-wJZ">
+                                        <rect key="frame" x="8" y="72" width="152" height="122"/>
+                                        <state key="normal" title="Button" image="car.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="osa-hV-k1R" kind="showDetail" id="2Ja-ma-EY7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97612853180000003" blue="0.5941457953" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -150,9 +156,6 @@
                     <tabBarItem key="tabBarItem" title="買う" image="kaimono.png" id="g8G-E0-its"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1200"/>
-                    <connections>
-                        <outlet property="pic1" destination="KpP-HC-Eal" id="ioq-ab-q7x"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwi-pC-0sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,9 +197,6 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-iN-sAT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDo-sT-wg6">
-                                        <rect key="frame" x="8" y="82" width="143" height="104"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ほたて炙り丼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64u-A9-VwG">
                                         <rect key="frame" x="28" y="202" width="102" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -209,19 +209,34 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-e8-LeM">
-                                        <rect key="frame" x="169" y="82" width="143" height="104"/>
-                                    </imageView>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-Qv-49Z">
                                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                         <items>
-                                            <barButtonItem title="Top" id="DaT-YK-lDc">
+                                            <barButtonItem title="&lt; Top" id="DaT-YK-lDc">
                                                 <connections>
                                                     <segue destination="vXZ-lx-hvc" kind="showDetail" id="M47-dt-JQz"/>
                                                 </connections>
                                             </barButtonItem>
                                         </items>
                                     </toolbar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hn-cu-DWt">
+                                        <rect key="frame" x="15" y="76" width="139" height="118"/>
+                                        <state key="normal" title="Button" image="car.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="osa-hV-k1R" kind="showDetail" id="SE6-ws-xt0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-0d-5IC">
+                                        <rect key="frame" x="170" y="73" width="131" height="123"/>
+                                        <state key="normal" title="Button" image="car.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="osa-hV-k1R" kind="showDetail" id="cHB-WK-XdA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97612853178323222" blue="0.59414579529789679" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -240,10 +255,6 @@
                     <tabBarItem key="tabBarItem" title="食べる" image="eat.png" id="i2J-dD-3Jy"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1200"/>
-                    <connections>
-                        <outlet property="pic1" destination="yDo-sT-wg6" id="sFP-ko-wmc"/>
-                        <outlet property="pic2" destination="Oye-e8-LeM" id="Wu8-hc-bRC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0J-Z9-nfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,7 +278,7 @@
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96E-6D-QNi">
                                         <rect key="frame" x="0.0" y="23" width="320" height="44"/>
                                         <items>
-                                            <barButtonItem title="Top" id="TZq-zK-4ad">
+                                            <barButtonItem title="&lt; Top" id="TZq-zK-4ad">
                                                 <connections>
                                                     <segue destination="vXZ-lx-hvc" kind="showDetail" id="2Av-Pe-8NS"/>
                                                 </connections>
@@ -324,6 +335,9 @@
                                 <state key="normal" title="&lt; Category">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5gb-cd-rdy" kind="showDetail" id="J4F-2b-ddQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUj-Ka-YWc">
                                 <rect key="frame" x="260" y="28" width="44" height="30"/>
@@ -453,7 +467,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezA-0P-anW">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Top" id="j7s-Df-8td">
+                                    <barButtonItem title="&lt; Top" id="j7s-Df-8td">
                                         <connections>
                                             <segue destination="vXZ-lx-hvc" kind="showDetail" id="Us2-my-9eX"/>
                                         </connections>
@@ -718,6 +732,7 @@
         <image name="walk.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="icy-HV-uJw"/>
+        <segue reference="TCL-cf-3aY"/>
+        <segue reference="2Ja-ma-EY7"/>
     </inferredMetricsTieBreakers>
 </document>
