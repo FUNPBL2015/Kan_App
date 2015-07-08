@@ -19,9 +19,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="E7r-0U-8Hu">
                                 <rect key="frame" x="0.0" y="20" width="320" height="123"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ki-ko.gif" translatesAutoresizingMaskIntoConstraints="NO" id="q8h-Y3-bVl">
-                                <rect key="frame" x="-15" y="380" width="179" height="180"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hukidashi.png" translatesAutoresizingMaskIntoConstraints="NO" id="0M9-vX-db9">
                                 <rect key="frame" x="0.0" y="119" width="320" height="311"/>
                             </imageView>
@@ -83,6 +80,15 @@
                                     <segue destination="Lzb-bj-reV" kind="showDetail" id="55M-T3-bmM"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-6U-RLq">
+                                <rect key="frame" x="-7" y="378" width="189" height="203"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="キーコ隊長申請中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMz-b4-WYO">
+                                <rect key="frame" x="15" y="477" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -927,6 +933,7 @@
         <image name="KANRINMARU00011.jpg" width="420" height="271"/>
         <image name="aburidon-aoki001.jpg" width="220" height="149"/>
         <image name="car.jpg" width="250" height="250"/>
+        <image name="cloud.png" width="1275" height="800"/>
         <image name="eat.png" width="32" height="32"/>
         <image name="frame.png" width="1043" height="735"/>
         <image name="furusatonomori000.jpg" width="320" height="213"/>
@@ -934,7 +941,6 @@
         <image name="ibazakura00021.jpg" width="419" height="271"/>
         <image name="kaimono.png" width="32" height="32"/>
         <image name="keshiki.png" width="32" height="32"/>
-        <image name="ki-ko.gif" width="316" height="428"/>
         <image name="logo.png" width="914" height="280"/>
         <image name="menu.gif" width="600" height="424"/>
         <image name="misogihama0001.jpg" width="320" height="210"/>

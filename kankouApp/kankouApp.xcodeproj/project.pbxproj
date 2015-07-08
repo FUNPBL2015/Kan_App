@@ -31,6 +31,7 @@
 		37C5C7871B4CD0DA00D7D9BA /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5C7841B4CD0DA00D7D9BA /* eat.png */; };
 		37C5C7881B4CD0DA00D7D9BA /* kaimono.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5C7851B4CD0DA00D7D9BA /* kaimono.png */; };
 		37C5C7891B4CD0DA00D7D9BA /* keshiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5C7861B4CD0DA00D7D9BA /* keshiki.png */; };
+		37C5C7991B4D573700D7D9BA /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5C7981B4D573700D7D9BA /* cloud.png */; };
 		37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CB78891B442F4D00A7098F /* ki-ko.gif */; };
 		37CB788C1B442F5600A7098F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CB788B1B442F5600A7098F /* logo.png */; };
 		37CB788E1B442F5C00A7098F /* hukidashi.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CB788D1B442F5C00A7098F /* hukidashi.png */; };
@@ -99,6 +100,7 @@
 		37C5C7841B4CD0DA00D7D9BA /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
 		37C5C7851B4CD0DA00D7D9BA /* kaimono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaimono.png; sourceTree = "<group>"; };
 		37C5C7861B4CD0DA00D7D9BA /* keshiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keshiki.png; sourceTree = "<group>"; };
+		37C5C7981B4D573700D7D9BA /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		37CB78891B442F4D00A7098F /* ki-ko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ki-ko.gif"; sourceTree = "<group>"; };
 		37CB788B1B442F5600A7098F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		37CB788D1B442F5C00A7098F /* hukidashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidashi.png; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB4EA451B4CB71C0092AB45 /* furusatonomori000.jpg */,
+				37C5C7981B4D573700D7D9BA /* cloud.png */,
 				8FB4EA461B4CB71C0092AB45 /* ibazakura00021.jpg */,
 				8FB4EA471B4CB71C0092AB45 /* KANRINMARU00011.jpg */,
 				8FB4EA481B4CB71C0092AB45 /* misogihama0001.jpg */,
@@ -366,6 +369,7 @@
 				8FB4EA651B4CB71C0092AB45 /* tokusan-meika001.jpg in Resources */,
 				3763BEC31B47D05800DB0C50 /* menu.gif in Resources */,
 				37A067FC1B424D3D00C4D533 /* PinBuy.csv in Resources */,
+				37C5C7991B4D573700D7D9BA /* cloud.png in Resources */,
 				37C5C7881B4CD0DA00D7D9BA /* kaimono.png in Resources */,
 				8FB4EA671B4CB71C0092AB45 /* tokusan-meika004.jpg in Resources */,
 				37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */,
