@@ -34,6 +34,29 @@
 		71C684521B3538A80013D5BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684511B3538A80013D5BE /* MapKit.framework */; };
 		71C684541B3538AF0013D5BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C684531B3538AF0013D5BE /* WebKit.framework */; };
 		8F3977961B46499800B4DACF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3977951B46499800B4DACF /* CoreLocation.framework */; };
+		8FB4EA181B4C44AB0092AB45 /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA151B4C44AB0092AB45 /* eat.png */; };
+		8FB4EA191B4C44AB0092AB45 /* kaimono.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA161B4C44AB0092AB45 /* kaimono.png */; };
+		8FB4EA1A1B4C44AB0092AB45 /* keshiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA171B4C44AB0092AB45 /* keshiki.png */; };
+		8FB4EA591B4CB71C0092AB45 /* furusatonomori000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA451B4CB71C0092AB45 /* furusatonomori000.jpg */; };
+		8FB4EA5A1B4CB71C0092AB45 /* ibazakura00021.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA461B4CB71C0092AB45 /* ibazakura00021.jpg */; };
+		8FB4EA5B1B4CB71C0092AB45 /* KANRINMARU00011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA471B4CB71C0092AB45 /* KANRINMARU00011.jpg */; };
+		8FB4EA5C1B4CB71C0092AB45 /* misogihama0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA481B4CB71C0092AB45 /* misogihama0001.jpg */; };
+		8FB4EA5D1B4CB71C0092AB45 /* samegawajinnjya00011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA491B4CB71C0092AB45 /* samegawajinnjya00011.jpg */; };
+		8FB4EA5E1B4CB71C0092AB45 /* samenuma0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA4A1B4CB71C0092AB45 /* samenuma0001.jpg */; };
+		8FB4EA5F1B4CB71C0092AB45 /* tyurippu002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA4B1B4CB71C0092AB45 /* tyurippu002.jpg */; };
+		8FB4EA601B4CB71C0092AB45 /* uriyabamuko000111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA4C1B4CB71C0092AB45 /* uriyabamuko000111.jpg */; };
+		8FB4EA611B4CB71C0092AB45 /* aburidon-aoki001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA4D1B4CB71C0092AB45 /* aburidon-aoki001.jpg */; };
+		8FB4EA621B4CB71C0092AB45 /* tokusan-gurume005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA4E1B4CB71C0092AB45 /* tokusan-gurume005.jpg */; };
+		8FB4EA631B4CB71C0092AB45 /* tokusan-gurume006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA4F1B4CB71C0092AB45 /* tokusan-gurume006.jpg */; };
+		8FB4EA641B4CB71C0092AB45 /* tokusan-gurume009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA501B4CB71C0092AB45 /* tokusan-gurume009.jpg */; };
+		8FB4EA651B4CB71C0092AB45 /* tokusan-meika001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA511B4CB71C0092AB45 /* tokusan-meika001.jpg */; };
+		8FB4EA661B4CB71C0092AB45 /* tokusan-meika002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA521B4CB71C0092AB45 /* tokusan-meika002.jpg */; };
+		8FB4EA671B4CB71C0092AB45 /* tokusan-meika004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA531B4CB71C0092AB45 /* tokusan-meika004.jpg */; };
+		8FB4EA681B4CB71C0092AB45 /* tokusan-meika011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA541B4CB71C0092AB45 /* tokusan-meika011.jpg */; };
+		8FB4EA691B4CB71C0092AB45 /* tokusan-yama001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA551B4CB71C0092AB45 /* tokusan-yama001.jpg */; };
+		8FB4EA6A1B4CB71C0092AB45 /* tokusan-yama003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA561B4CB71C0092AB45 /* tokusan-yama003.jpg */; };
+		8FB4EA6B1B4CB71C0092AB45 /* tokusan-yama005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA571B4CB71C0092AB45 /* tokusan-yama005.jpg */; };
+		8FB4EA6C1B4CB71C0092AB45 /* tokusan-yama006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4EA581B4CB71C0092AB45 /* tokusan-yama006.jpg */; };
 		9C5D6B741B43F58F00F65825 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +102,29 @@
 		71C684511B3538A80013D5BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71C684531B3538AF0013D5BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8F3977951B46499800B4DACF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8FB4EA151B4C44AB0092AB45 /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eat.png; path = "../../../Desktop/アイコン/eat.png"; sourceTree = "<group>"; };
+		8FB4EA161B4C44AB0092AB45 /* kaimono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kaimono.png; path = "../../../Desktop/アイコン/kaimono.png"; sourceTree = "<group>"; };
+		8FB4EA171B4C44AB0092AB45 /* keshiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keshiki.png; path = "../../../Desktop/アイコン/keshiki.png"; sourceTree = "<group>"; };
+		8FB4EA451B4CB71C0092AB45 /* furusatonomori000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = furusatonomori000.jpg; sourceTree = "<group>"; };
+		8FB4EA461B4CB71C0092AB45 /* ibazakura00021.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ibazakura00021.jpg; sourceTree = "<group>"; };
+		8FB4EA471B4CB71C0092AB45 /* KANRINMARU00011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KANRINMARU00011.jpg; sourceTree = "<group>"; };
+		8FB4EA481B4CB71C0092AB45 /* misogihama0001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misogihama0001.jpg; sourceTree = "<group>"; };
+		8FB4EA491B4CB71C0092AB45 /* samegawajinnjya00011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samegawajinnjya00011.jpg; sourceTree = "<group>"; };
+		8FB4EA4A1B4CB71C0092AB45 /* samenuma0001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samenuma0001.jpg; sourceTree = "<group>"; };
+		8FB4EA4B1B4CB71C0092AB45 /* tyurippu002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyurippu002.jpg; sourceTree = "<group>"; };
+		8FB4EA4C1B4CB71C0092AB45 /* uriyabamuko000111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uriyabamuko000111.jpg; sourceTree = "<group>"; };
+		8FB4EA4D1B4CB71C0092AB45 /* aburidon-aoki001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aburidon-aoki001.jpg"; sourceTree = "<group>"; };
+		8FB4EA4E1B4CB71C0092AB45 /* tokusan-gurume005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-gurume005.jpg"; sourceTree = "<group>"; };
+		8FB4EA4F1B4CB71C0092AB45 /* tokusan-gurume006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-gurume006.jpg"; sourceTree = "<group>"; };
+		8FB4EA501B4CB71C0092AB45 /* tokusan-gurume009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-gurume009.jpg"; sourceTree = "<group>"; };
+		8FB4EA511B4CB71C0092AB45 /* tokusan-meika001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-meika001.jpg"; sourceTree = "<group>"; };
+		8FB4EA521B4CB71C0092AB45 /* tokusan-meika002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-meika002.jpg"; sourceTree = "<group>"; };
+		8FB4EA531B4CB71C0092AB45 /* tokusan-meika004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-meika004.jpg"; sourceTree = "<group>"; };
+		8FB4EA541B4CB71C0092AB45 /* tokusan-meika011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-meika011.jpg"; sourceTree = "<group>"; };
+		8FB4EA551B4CB71C0092AB45 /* tokusan-yama001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-yama001.jpg"; sourceTree = "<group>"; };
+		8FB4EA561B4CB71C0092AB45 /* tokusan-yama003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-yama003.jpg"; sourceTree = "<group>"; };
+		8FB4EA571B4CB71C0092AB45 /* tokusan-yama005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-yama005.jpg"; sourceTree = "<group>"; };
+		8FB4EA581B4CB71C0092AB45 /* tokusan-yama006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokusan-yama006.jpg"; sourceTree = "<group>"; };
 		9C5D6B731B43F58F00F65825 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9C5D6B751B43F59800F65825 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +195,29 @@
 		37179B201B3148A600EA23FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8FB4EA451B4CB71C0092AB45 /* furusatonomori000.jpg */,
+				8FB4EA461B4CB71C0092AB45 /* ibazakura00021.jpg */,
+				8FB4EA471B4CB71C0092AB45 /* KANRINMARU00011.jpg */,
+				8FB4EA481B4CB71C0092AB45 /* misogihama0001.jpg */,
+				8FB4EA491B4CB71C0092AB45 /* samegawajinnjya00011.jpg */,
+				8FB4EA4A1B4CB71C0092AB45 /* samenuma0001.jpg */,
+				8FB4EA4B1B4CB71C0092AB45 /* tyurippu002.jpg */,
+				8FB4EA4C1B4CB71C0092AB45 /* uriyabamuko000111.jpg */,
+				8FB4EA4D1B4CB71C0092AB45 /* aburidon-aoki001.jpg */,
+				8FB4EA4E1B4CB71C0092AB45 /* tokusan-gurume005.jpg */,
+				8FB4EA4F1B4CB71C0092AB45 /* tokusan-gurume006.jpg */,
+				8FB4EA501B4CB71C0092AB45 /* tokusan-gurume009.jpg */,
+				8FB4EA511B4CB71C0092AB45 /* tokusan-meika001.jpg */,
+				8FB4EA521B4CB71C0092AB45 /* tokusan-meika002.jpg */,
+				8FB4EA531B4CB71C0092AB45 /* tokusan-meika004.jpg */,
+				8FB4EA541B4CB71C0092AB45 /* tokusan-meika011.jpg */,
+				8FB4EA551B4CB71C0092AB45 /* tokusan-yama001.jpg */,
+				8FB4EA561B4CB71C0092AB45 /* tokusan-yama003.jpg */,
+				8FB4EA571B4CB71C0092AB45 /* tokusan-yama005.jpg */,
+				8FB4EA581B4CB71C0092AB45 /* tokusan-yama006.jpg */,
+				8FB4EA151B4C44AB0092AB45 /* eat.png */,
+				8FB4EA161B4C44AB0092AB45 /* kaimono.png */,
+				8FB4EA171B4C44AB0092AB45 /* keshiki.png */,
 				3763BF241B4ADEB100DB0C50 /* frame.png */,
 				3763BEC21B47D05800DB0C50 /* menu.gif */,
 				3763BF2C1B4B189400DB0C50 /* walk.png */,
@@ -264,18 +333,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB4EA5A1B4CB71C0092AB45 /* ibazakura00021.jpg in Resources */,
 				3763BF2D1B4B189400DB0C50 /* walk.png in Resources */,
 				3763BF2B1B4B188B00DB0C50 /* car.jpg in Resources */,
+				8FB4EA5B1B4CB71C0092AB45 /* KANRINMARU00011.jpg in Resources */,
 				3763BF251B4ADEB100DB0C50 /* frame.png in Resources */,
+				8FB4EA591B4CB71C0092AB45 /* furusatonomori000.jpg in Resources */,
 				37179B281B3148A600EA23FA /* Main.storyboard in Resources */,
+				8FB4EA181B4C44AB0092AB45 /* eat.png in Resources */,
+				8FB4EA631B4CB71C0092AB45 /* tokusan-gurume006.jpg in Resources */,
+				8FB4EA691B4CB71C0092AB45 /* tokusan-yama001.jpg in Resources */,
+				8FB4EA601B4CB71C0092AB45 /* uriyabamuko000111.jpg in Resources */,
+				8FB4EA6A1B4CB71C0092AB45 /* tokusan-yama003.jpg in Resources */,
+				8FB4EA661B4CB71C0092AB45 /* tokusan-meika002.jpg in Resources */,
 				37A068001B424D4C00C4D533 /* PinLook.csv in Resources */,
+				8FB4EA611B4CB71C0092AB45 /* aburidon-aoki001.jpg in Resources */,
+				8FB4EA5F1B4CB71C0092AB45 /* tyurippu002.jpg in Resources */,
+				8FB4EA681B4CB71C0092AB45 /* tokusan-meika011.jpg in Resources */,
+				8FB4EA5E1B4CB71C0092AB45 /* samenuma0001.jpg in Resources */,
+				8FB4EA6C1B4CB71C0092AB45 /* tokusan-yama006.jpg in Resources */,
+				8FB4EA6B1B4CB71C0092AB45 /* tokusan-yama005.jpg in Resources */,
+				8FB4EA5C1B4CB71C0092AB45 /* misogihama0001.jpg in Resources */,
+				8FB4EA1A1B4C44AB0092AB45 /* keshiki.png in Resources */,
+				8FB4EA641B4CB71C0092AB45 /* tokusan-gurume009.jpg in Resources */,
 				37179B2D1B3148A600EA23FA /* LaunchScreen.xib in Resources */,
+				8FB4EA621B4CB71C0092AB45 /* tokusan-gurume005.jpg in Resources */,
 				37CB788E1B442F5C00A7098F /* hukidashi.png in Resources */,
+				8FB4EA5D1B4CB71C0092AB45 /* samegawajinnjya00011.jpg in Resources */,
 				37179B2A1B3148A600EA23FA /* Images.xcassets in Resources */,
 				37CB788C1B442F5600A7098F /* logo.png in Resources */,
 				37A067FE1B424D4400C4D533 /* PinEat.csv in Resources */,
+				8FB4EA651B4CB71C0092AB45 /* tokusan-meika001.jpg in Resources */,
 				3763BEC31B47D05800DB0C50 /* menu.gif in Resources */,
+				8FB4EA191B4C44AB0092AB45 /* kaimono.png in Resources */,
 				37A067FC1B424D3D00C4D533 /* PinBuy.csv in Resources */,
+				8FB4EA671B4CB71C0092AB45 /* tokusan-meika004.jpg in Resources */,
 				37CB788A1B442F4D00A7098F /* ki-ko.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
