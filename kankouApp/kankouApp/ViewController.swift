@@ -1,22 +1,45 @@
-//
-//  ViewController.swift
-//  kankouApp
-//
-//  Created by 岩見建汰 on 2015/06/17.
-//  Copyright (c) 2015年 Kenta. All rights reserved.
-//
-
-import UIKit
-
-class ViewController: UIViewController {
+ //  ViewController.swift
+ //  kankouApp
+ //
+ //  Created by 岩見建汰 on 2015/06/17.
+ //  Created by 池田俊輝 on 2015/07/07.
+ //  Copyright (c) 2015年 Kenta. All rights reserved.
+ //
+ 
+ import UIKit
+ 
+ class ViewController: UIViewController {
     
     var myButton1: UIButton!
     var myButton2: UIButton!
     
+    @IBOutlet weak var nowimage: UIImageView!
+    @IBOutlet weak var nowtemp: UILabel!
+    @IBOutlet weak var maxtemp: UILabel!
+    @IBOutlet weak var mintemp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         self.navigationController?.hidesBarsOnTap = true
+        
+        var maxTemp: String
+        var minTemp: String
+        var nowTemp: String
+        var nowWeatherImage: UIImage
+        
+        var request = NSURLRequest(URL: NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=Kikonai,jp&APPID=929cccb5476e5965410a401bf0efe12a")!)
+        var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil, error: nil)
+        var json = JSON(data:data!)
+        nowTemp = NSString(format: "%.1f", json["main"]["temp"].doubleValue - 273.15) as! String
+        maxTemp = NSString(format: "%.1f", json["main"]["temp_max"].doubleValue - 273.15) as! String
+        minTemp = NSString(format: "%.1f", json["main"]["temp_min"].doubleValue - 273.15) as! String
+        nowWeatherImage = UIImage(data: NSData(contentsOfURL: NSURL(string: "http://openweathermap.org/img/w/"+json["weather"][0]["icon"].string!+".png")!, options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)!)!
+        
+        nowtemp.text = nowTemp
+        maxtemp.text = maxTemp
+        mintemp.text = minTemp
+        nowimage.image = nowWeatherImage
         
         // Buttonを生成する.
         myButton1 = UIButton()
@@ -37,9 +60,9 @@ class ViewController: UIViewController {
         myButton2.layer.masksToBounds = true
         
         // タイトルを設定する(通常時).
-        myButton1.setTitle("観光スポット情報", forState: UIControlState.Normal)
+        myButton1.setTitle("観光する", forState: UIControlState.Normal)
         myButton1.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        myButton2.setTitle("木古内のお天気", forState: UIControlState.Normal)
+        myButton2.setTitle("振り返る", forState: UIControlState.Normal)
         myButton2.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         
         // コーナーの半径を設定する.
@@ -47,8 +70,8 @@ class ViewController: UIViewController {
         myButton2.layer.cornerRadius = 20.0
         
         // ボタンの位置を指定する.
-        myButton1.layer.position = CGPoint(x: self.view.frame.width/2-14, y:210)
-        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+14, y:300)
+        myButton1.layer.position = CGPoint(x: self.view.frame.width/2-14, y:205)
+        myButton2.layer.position = CGPoint(x: self.view.frame.width/2+14, y:295)
         
         // タグを設定する.
         myButton1.tag = 1
@@ -61,21 +84,23 @@ class ViewController: UIViewController {
         // ボタンをViewに追加する.
         self.view.addSubview(myButton1)
         self.view.addSubview(myButton2)
-
+        
+        // Do any additional setup after loading the view.
     }
-
+ 
+ 
     /*
     ボタンのアクション時に設定したメソッド.
     */
     func ClickMyButton1(sender: UIButton){
         myButton1.alpha = 0.5
-        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("tourmap")
+        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("category")
         self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
     }
     
     func ClickMyButton2(sender: UIButton){
         myButton2.alpha = 0.5
-        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("weather")
+        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("photostory")
         self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
     }
     
@@ -83,5 +108,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
-
+ }
